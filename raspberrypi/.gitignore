@@ -1,0 +1,26 @@
+# Python caches and environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Runtime data may contain user identifiers and enrolled embeddings
+data/*.json
+data/*.db
+data/*.db-wal
+data/*.db-shm
+data/debug-patterns/
+:memory:.ses
+
+# Local configuration and secrets
+.env
+.env.*
+
+# Editors and operating systems
+.DS_Store
+.idea/
+.vscode/
+
+# Generated output
+build/
+outputs/

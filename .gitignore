@@ -1,0 +1,28 @@
+# Repository-wide generated files
+.DS_Store
+*.swp
+
+# Arduino build output
+arduino/**/build/
+arduino/**/*.hex
+arduino/**/*.elf
+
+# Python cache and local environments
+__pycache__/
+*.py[cod]
+.venv/
+.venv-*/
+*.egg-info/
+
+# Runtime data
+*.sqlite3
+raspberrypi/data/*
+!raspberrypi/data/.gitkeep
+
+# AI model assets are installed only on the demonstration Raspberry Pi.
+*.onnx
+*.onnx.sha256
+**/models/
+
+# Local diagnostics
+**/debug-patterns/

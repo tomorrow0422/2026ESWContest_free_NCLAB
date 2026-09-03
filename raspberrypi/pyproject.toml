@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "nclab-alt-auth"
+version = "0.1.0"
+description = "Raspberry Pi pressure-pattern access authentication application"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+dependencies = [
+    "matplotlib==3.11.1",
+    "numpy>=1.24,<3",
+    "onnxruntime>=1.18,<2",
+    "pyserial>=3.5",
+]
+
+[project.scripts]
+nclab-auth = "nclab_alt_auth.main:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["nclab_alt_auth", "nclab_alt_auth.*"]
